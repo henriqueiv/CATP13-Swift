@@ -15,13 +15,13 @@ enum Nivel {
         switch self {
         case .graduacao:
             return "Graduação"
-        
+            
         case .especializacao:
             return "Especialização"
-        
+            
         case .mestrado:
             return "Mestrado"
-        
+            
         case .doutorado:
             return "Doutorado"
             
@@ -31,7 +31,13 @@ enum Nivel {
     }
 }
 
-class Aluno: Pessoa {
+class Aluno: Pessoa, CATPComparable {
+    
+    /*
+     Satisfazendo a necessidade de criação do tipo E do CATPComparable.
+     Desnecessário devido a implementação usando `Self`
+     */
+    typealias E = Aluno
     
     private var codigo: String
     private var nivel: Nivel
@@ -81,4 +87,18 @@ class Aluno: Pessoa {
         return theCopy
     }
     
+    // - MARK: CATPComparable
+    func compares_to(obj: Aluno) -> Int {
+        let compare = self.getNome().compare(obj.getNome())
+        return compare.asCATPInt
+    }
+    
 }
+
+
+
+
+
+
+
+
