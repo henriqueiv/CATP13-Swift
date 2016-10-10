@@ -13,8 +13,31 @@ class AddNewAlunoViewController: UITableViewController {
     
     @IBAction func saveAluno() {
         let newAluno = Aluno()
-        newAluno.setNome(nome: String(format: "%d", arc4random()))
-        newAluno.setNivel(nivel: arc4random_uniform(2) == 1 ? .graduacao : .doutorado)
+        newAluno.setNome(nome: nameField.text ?? "")
+        newAluno.setCodigo(codigo: codeField.text ?? "")
+        newAluno.setDtnascimento(data: dataPicker.date)
+        
+        switch sexSegmentedControl.selectedSegmentIndex {
+        case 1:
+            newAluno.setSexo(sexo: .feminino)
+        case 2:
+            newAluno.setSexo(sexo: .masculino)
+        default:
+            newAluno.setSexo(sexo: .indefinido)
+        }
+        
+        switch nivelSegmentedControl.selectedSegmentIndex {
+        case 1:
+            newAluno.setNivel(nivel: .graduacao)
+        case 2:
+            newAluno.setNivel(nivel: .especializacao)
+        case 3:
+            newAluno.setNivel(nivel: .mestrado)
+        case 4:
+            newAluno.setNivel(nivel: .doutorado)
+        default:
+            newAluno.setNivel(nivel: .indefinido)
+        }
         
         self.delegate?.alunos.append(newAluno)
         delegate?.tableView.reloadData()
@@ -22,6 +45,7 @@ class AddNewAlunoViewController: UITableViewController {
             self.delegate?.tableView.reloadData()
         }
     }
+    
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var codeField: UITextField!
