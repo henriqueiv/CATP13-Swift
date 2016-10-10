@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6205DEEC1DABFBFA00DE64EC"
-               BuildableName = "CATP13-Swift"
-               BlueprintName = "CATP13-Swift"
+               BlueprintIdentifier = "6205DF001DAC186A00DE64EC"
+               BuildableName = "iOS App.app"
+               BlueprintName = "iOS App"
                ReferencedContainer = "container:CATP13-Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6205DEEC1DABFBFA00DE64EC"
-            BuildableName = "CATP13-Swift"
-            BlueprintName = "CATP13-Swift"
+            BlueprintIdentifier = "6205DF001DAC186A00DE64EC"
+            BuildableName = "iOS App.app"
+            BlueprintName = "iOS App"
             ReferencedContainer = "container:CATP13-Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6205DEEC1DABFBFA00DE64EC"
-            BuildableName = "CATP13-Swift"
-            BlueprintName = "CATP13-Swift"
+            BlueprintIdentifier = "6205DF001DAC186A00DE64EC"
+            BuildableName = "iOS App.app"
+            BlueprintName = "iOS App"
             ReferencedContainer = "container:CATP13-Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6205DEEC1DABFBFA00DE64EC"
-            BuildableName = "CATP13-Swift"
-            BlueprintName = "CATP13-Swift"
+            BlueprintIdentifier = "6205DF001DAC186A00DE64EC"
+            BuildableName = "iOS App.app"
+            BlueprintName = "iOS App"
             ReferencedContainer = "container:CATP13-Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

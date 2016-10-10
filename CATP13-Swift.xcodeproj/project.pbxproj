@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		337A3BE31DAC1FDC0033FC28 /* AddNewAlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */; };
-		6205DEF11DABFBFA00DE64EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF01DABFBFA00DE64EC /* main.swift */; };
-		6205DEF81DABFC1700DE64EC /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF71DABFC1700DE64EC /* Pessoa.swift */; };
-		6205DEFA1DABFCD000DE64EC /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF91DABFCD000DE64EC /* Aluno.swift */; };
 		6205DF041DAC186A00DE64EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF031DAC186A00DE64EC /* AppDelegate.swift */; };
 		6205DF061DAC186A00DE64EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF051DAC186A00DE64EC /* ViewController.swift */; };
 		6205DF091DAC186A00DE64EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205DF071DAC186A00DE64EC /* Main.storyboard */; };
@@ -18,24 +15,13 @@
 		6205DF0E1DAC186A00DE64EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205DF0C1DAC186A00DE64EC /* LaunchScreen.storyboard */; };
 		6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF71DABFC1700DE64EC /* Pessoa.swift */; };
 		6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF91DABFCD000DE64EC /* Aluno.swift */; };
+		6205DF221DAC24D200DE64EC /* CATPComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF211DAC24D200DE64EC /* CATPComparable.swift */; };
+		6205DF251DAC24E800DE64EC /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF231DAC24E800DE64EC /* Array+Extensions.swift */; };
+		6205DF261DAC24E800DE64EC /* ComparisonResult+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6205DEEB1DABFBFA00DE64EC /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAlunoViewController.swift; sourceTree = "<group>"; };
-		6205DEED1DABFBFA00DE64EC /* CATP13-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CATP13-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6205DEF01DABFBFA00DE64EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6205DEF71DABFC1700DE64EC /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 		6205DEF91DABFCD000DE64EC /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		6205DF011DAC186A00DE64EC /* iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,16 +31,12 @@
 		6205DF0A1DAC186A00DE64EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6205DF0D1DAC186A00DE64EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6205DF0F1DAC186A00DE64EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6205DF211DAC24D200DE64EC /* CATPComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATPComparable.swift; sourceTree = "<group>"; };
+		6205DF231DAC24E800DE64EC /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ComparisonResult+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6205DEEA1DABFBFA00DE64EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6205DEFE1DAC186A00DE64EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,7 +50,6 @@
 		6205DEE41DABFBFA00DE64EC = {
 			isa = PBXGroup;
 			children = (
-				6205DEEF1DABFBFA00DE64EC /* CATP13-Swift */,
 				6205DF021DAC186A00DE64EC /* iOS App */,
 				6205DEEE1DABFBFA00DE64EC /* Products */,
 			);
@@ -77,56 +58,57 @@
 		6205DEEE1DABFBFA00DE64EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6205DEED1DABFBFA00DE64EC /* CATP13-Swift */,
 				6205DF011DAC186A00DE64EC /* iOS App.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6205DEEF1DABFBFA00DE64EC /* CATP13-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				6205DEF01DABFBFA00DE64EC /* main.swift */,
-				6205DEF71DABFC1700DE64EC /* Pessoa.swift */,
-				6205DEF91DABFCD000DE64EC /* Aluno.swift */,
-			);
-			path = "CATP13-Swift";
 			sourceTree = "<group>";
 		};
 		6205DF021DAC186A00DE64EC /* iOS App */ = {
 			isa = PBXGroup;
 			children = (
 				6205DF031DAC186A00DE64EC /* AppDelegate.swift */,
-				6205DF051DAC186A00DE64EC /* ViewController.swift */,
 				337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */,
-				6205DF071DAC186A00DE64EC /* Main.storyboard */,
 				6205DF0A1DAC186A00DE64EC /* Assets.xcassets */,
-				6205DF0C1DAC186A00DE64EC /* LaunchScreen.storyboard */,
+				6205DF1C1DAC231E00DE64EC /* Extension */,
 				6205DF0F1DAC186A00DE64EC /* Info.plist */,
+				6205DF0C1DAC186A00DE64EC /* LaunchScreen.storyboard */,
+				6205DF071DAC186A00DE64EC /* Main.storyboard */,
+				6205DF1B1DAC230E00DE64EC /* Model */,
+				6205DF1D1DAC233400DE64EC /* Protocol */,
+				6205DF051DAC186A00DE64EC /* ViewController.swift */,
 			);
 			path = "iOS App";
+			sourceTree = "<group>";
+		};
+		6205DF1B1DAC230E00DE64EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6205DEF91DABFCD000DE64EC /* Aluno.swift */,
+				6205DEF71DABFC1700DE64EC /* Pessoa.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6205DF1C1DAC231E00DE64EC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6205DF231DAC24E800DE64EC /* Array+Extensions.swift */,
+				6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6205DF1D1DAC233400DE64EC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6205DF211DAC24D200DE64EC /* CATPComparable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6205DEEC1DABFBFA00DE64EC /* CATP13-Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6205DEF41DABFBFA00DE64EC /* Build configuration list for PBXNativeTarget "CATP13-Swift" */;
-			buildPhases = (
-				6205DEE91DABFBFA00DE64EC /* Sources */,
-				6205DEEA1DABFBFA00DE64EC /* Frameworks */,
-				6205DEEB1DABFBFA00DE64EC /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CATP13-Swift";
-			productName = "CATP13-Swift";
-			productReference = 6205DEED1DABFBFA00DE64EC /* CATP13-Swift */;
-			productType = "com.apple.product-type.tool";
-		};
 		6205DF001DAC186A00DE64EC /* iOS App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6205DF101DAC186A00DE64EC /* Build configuration list for PBXNativeTarget "iOS App" */;
@@ -154,11 +136,6 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Henrique Valcanaia";
 				TargetAttributes = {
-					6205DEEC1DABFBFA00DE64EC = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 8WCPHDZJPJ;
-						ProvisioningStyle = Automatic;
-					};
 					6205DF001DAC186A00DE64EC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8WCPHDZJPJ;
@@ -179,7 +156,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6205DEEC1DABFBFA00DE64EC /* CATP13-Swift */,
 				6205DF001DAC186A00DE64EC /* iOS App */,
 			);
 		};
@@ -199,16 +175,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6205DEE91DABFBFA00DE64EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6205DEFA1DABFCD000DE64EC /* Aluno.swift in Sources */,
-				6205DEF81DABFC1700DE64EC /* Pessoa.swift in Sources */,
-				6205DEF11DABFBFA00DE64EC /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6205DEFD1DAC186A00DE64EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +182,9 @@
 				6205DF061DAC186A00DE64EC /* ViewController.swift in Sources */,
 				337A3BE31DAC1FDC0033FC28 /* AddNewAlunoViewController.swift in Sources */,
 				6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */,
+				6205DF261DAC24E800DE64EC /* ComparisonResult+Extensions.swift in Sources */,
+				6205DF251DAC24E800DE64EC /* Array+Extensions.swift in Sources */,
+				6205DF221DAC24D200DE64EC /* CATPComparable.swift in Sources */,
 				6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */,
 				6205DF041DAC186A00DE64EC /* AppDelegate.swift in Sources */,
 			);
@@ -331,24 +300,6 @@
 			};
 			name = Release;
 		};
-		6205DEF51DABFBFA00DE64EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8WCPHDZJPJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		6205DEF61DABFBFA00DE64EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8WCPHDZJPJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		6205DF111DAC186A00DE64EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,15 +345,6 @@
 			buildConfigurations = (
 				6205DEF21DABFBFA00DE64EC /* Debug */,
 				6205DEF31DABFBFA00DE64EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6205DEF41DABFBFA00DE64EC /* Build configuration list for PBXNativeTarget "CATP13-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6205DEF51DABFBFA00DE64EC /* Debug */,
-				6205DEF61DABFBFA00DE64EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
