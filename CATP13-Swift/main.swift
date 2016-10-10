@@ -32,4 +32,6 @@ print(p3.description)
 // - MARK: 2.c
 print("---------- Item 2.c ----------")
 let a1 = Aluno()
+let a2 = Aluno(codigo: "Aluno com nome", nivel: .graduacao)
 print(a1.description)
+print(a2.description)
