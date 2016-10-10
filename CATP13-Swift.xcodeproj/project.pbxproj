@@ -14,6 +14,9 @@
 		6205DF0E1DAC186A00DE64EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205DF0C1DAC186A00DE64EC /* LaunchScreen.storyboard */; };
 		6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF71DABFC1700DE64EC /* Pessoa.swift */; };
 		6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DEF91DABFCD000DE64EC /* Aluno.swift */; };
+		6205DF1E1DAC239400DE64EC /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF151DAC22B900DE64EC /* Array+Extensions.swift */; };
+		6205DF1F1DAC239700DE64EC /* ComparisonResult+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF171DAC22CA00DE64EC /* ComparisonResult+Extensions.swift */; };
+		6205DF201DAC23A000DE64EC /* CATPComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF191DAC22E600DE64EC /* CATPComparable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6205DF061DAC186A00DE64EC /* ViewController.swift in Sources */,
+				6205DF201DAC23A000DE64EC /* CATPComparable.swift in Sources */,
+				6205DF1E1DAC239400DE64EC /* Array+Extensions.swift in Sources */,
 				6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */,
+				6205DF1F1DAC239700DE64EC /* ComparisonResult+Extensions.swift in Sources */,
 				6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */,
 				6205DF041DAC186A00DE64EC /* AppDelegate.swift in Sources */,
 			);
