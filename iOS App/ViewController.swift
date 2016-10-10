@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UITableViewController {
+    var alunos: [Aluno] = []
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return alunos.count
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AlunoCell", for: indexPath)
+        let aluno = alunos[indexPath.row]
+        
+        cell.textLabel?.text = aluno.getNome()
+        cell.detailTextLabel?.text = "\(aluno.getNivel())"
+        
+        return cell
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        (segue.destination.childViewControllers.first as? AddNewAlunoViewController)?.delegate = self
+    }
 }
-
