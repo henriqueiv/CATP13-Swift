@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eWe-0q-R1p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eWe-0q-R1p">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -46,6 +46,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="m4s-8k-XUn">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="sIZ-sm-lIE">
+                            <connections>
+                                <action selector="didTapSort:" destination="bVE-Kw-GSc" id="Bc1-ij-AkR"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vcx-sn-aIW">
                             <connections>
                                 <segue destination="iiY-cp-90d" kind="presentation" id="QLZ-31-p5K"/>
@@ -143,13 +148,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXy-Ue-D08">
-                                                            <frame key="frameInset" minX="42" width="71" height="27"/>
+                                                            <frame key="frameInset" minX="42" width="71" height="28"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                         <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z1e-8n-lqz">
-                                                            <frame key="frameInset" minX="113" width="230" height="28"/>
+                                                            <frame key="frameInset" minX="113" width="230" height="29"/>
                                                             <segments>
                                                                 <segment title="Indefinido"/>
                                                                 <segment title="Feminino"/>
@@ -218,8 +223,7 @@
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r6J-Xo-Xn1">
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Data de Nascimento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkr-Ue-jzf">
-                                                            <frame key="frameInset" width="343" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Nascimento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkr-Ue-jzf">
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -231,7 +235,7 @@
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                         <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lrz-tq-HPs">
-                                                            <frame key="frameInset" minY="68" height="216"/>
+                                                            <frame key="frameInset" minY="68" width="343" height="216"/>
                                                             <date key="date" timeIntervalSinceReferenceDate="497820787.67124301">
                                                                 <!--2016-10-10 19:33:07 +0000-->
                                                             </date>

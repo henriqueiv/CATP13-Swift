@@ -11,6 +11,12 @@ import UIKit
 class AddNewAlunoViewController: UITableViewController {
     var delegate: ViewController?
     
+    @IBOutlet var nameField: UITextField!
+    @IBOutlet var codeField: UITextField!
+    @IBOutlet var dataPicker: UIDatePicker!
+    @IBOutlet var sexSegmentedControl: UISegmentedControl!
+    @IBOutlet var nivelSegmentedControl: UISegmentedControl!
+    
     @IBAction func saveAluno() {
         let newAluno = Aluno()
         newAluno.setNome(nome: nameField.text ?? "")
@@ -40,17 +46,9 @@ class AddNewAlunoViewController: UITableViewController {
         }
         
         self.delegate?.alunos.append(newAluno)
-        delegate?.tableView.reloadData()
         dismiss(animated: true) {
             self.delegate?.tableView.reloadData()
         }
     }
-    
-    
-    @IBOutlet var nameField: UITextField!
-    @IBOutlet var codeField: UITextField!
-    @IBOutlet var dataPicker: UIDatePicker!
-    @IBOutlet var sexSegmentedControl: UISegmentedControl!
-    @IBOutlet var nivelSegmentedControl: UISegmentedControl!
     
 }

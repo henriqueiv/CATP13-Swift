@@ -12,10 +12,11 @@ extension Array where Element: CATPComparable {
     func mySort() -> Array<Element> {
         let sortedValues = sorted { (obj1, obj2) -> Bool in
             let compareIntResult = obj1.compares_to(obj: obj2)
-            let shouldChange = (compareIntResult == ComparisonResult.orderedDescending.asCATPInt)
-            
+            let shouldChange = (compareIntResult == ComparisonResult.orderedAscending.asCATPInt)
+            print("Should change '\((obj1 as! Aluno).getNome())' por `\((obj2 as! Aluno).getNome())`: \(shouldChange)")
             return shouldChange
         }
         return sortedValues
     }
 }
+

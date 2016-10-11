@@ -18,6 +18,7 @@
 		6205DF221DAC24D200DE64EC /* CATPComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF211DAC24D200DE64EC /* CATPComparable.swift */; };
 		6205DF251DAC24E800DE64EC /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF231DAC24E800DE64EC /* Array+Extensions.swift */; };
 		6205DF261DAC24E800DE64EC /* ComparisonResult+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */; };
+		6258EFA11DACA14A00CC33C5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258EFA01DACA14A00CC33C5 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6205DF211DAC24D200DE64EC /* CATPComparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATPComparable.swift; sourceTree = "<group>"; };
 		6205DF231DAC24E800DE64EC /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ComparisonResult+Extensions.swift"; sourceTree = "<group>"; };
+		6258EFA01DACA14A00CC33C5 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				6205DF231DAC24E800DE64EC /* Array+Extensions.swift */,
 				6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */,
+				6258EFA01DACA14A00CC33C5 /* String+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				337A3BE31DAC1FDC0033FC28 /* AddNewAlunoViewController.swift in Sources */,
 				6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */,
 				6205DF261DAC24E800DE64EC /* ComparisonResult+Extensions.swift in Sources */,
+				6258EFA11DACA14A00CC33C5 /* String+Extensions.swift in Sources */,
 				6205DF251DAC24E800DE64EC /* Array+Extensions.swift in Sources */,
 				6205DF221DAC24D200DE64EC /* CATPComparable.swift in Sources */,
 				6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */,
