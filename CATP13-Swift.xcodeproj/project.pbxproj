@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336692121DB425EA0022104B /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336692111DB425EA0022104B /* Int+Extensions.swift */; };
+		336692141DB427440022104B /* AlunoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336692131DB427440022104B /* AlunoTableViewCell.swift */; };
 		337A3BE31DAC1FDC0033FC28 /* AddNewAlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */; };
 		6205DF041DAC186A00DE64EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF031DAC186A00DE64EC /* AppDelegate.swift */; };
 		6205DF061DAC186A00DE64EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205DF051DAC186A00DE64EC /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		336692111DB425EA0022104B /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		336692131DB427440022104B /* AlunoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoTableViewCell.swift; sourceTree = "<group>"; };
 		337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAlunoViewController.swift; sourceTree = "<group>"; };
 		6205DEF71DABFC1700DE64EC /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 		6205DEF91DABFCD000DE64EC /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
@@ -69,7 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				6205DF031DAC186A00DE64EC /* AppDelegate.swift */,
+				336692131DB427440022104B /* AlunoTableViewCell.swift */,
 				337A3BE21DAC1FDC0033FC28 /* AddNewAlunoViewController.swift */,
+				6205DF051DAC186A00DE64EC /* ViewController.swift */,
 				6205DF0A1DAC186A00DE64EC /* Assets.xcassets */,
 				6205DF1C1DAC231E00DE64EC /* Extension */,
 				6205DF0F1DAC186A00DE64EC /* Info.plist */,
@@ -77,7 +83,6 @@
 				6205DF071DAC186A00DE64EC /* Main.storyboard */,
 				6205DF1B1DAC230E00DE64EC /* Model */,
 				6205DF1D1DAC233400DE64EC /* Protocol */,
-				6205DF051DAC186A00DE64EC /* ViewController.swift */,
 			);
 			path = "iOS App";
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				6205DF231DAC24E800DE64EC /* Array+Extensions.swift */,
 				6205DF241DAC24E800DE64EC /* ComparisonResult+Extensions.swift */,
 				6258EFA01DACA14A00CC33C5 /* String+Extensions.swift */,
+				336692111DB425EA0022104B /* Int+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6205DF061DAC186A00DE64EC /* ViewController.swift in Sources */,
+				336692141DB427440022104B /* AlunoTableViewCell.swift in Sources */,
 				337A3BE31DAC1FDC0033FC28 /* AddNewAlunoViewController.swift in Sources */,
 				6205DF141DAC187B00DE64EC /* Aluno.swift in Sources */,
 				6205DF261DAC24E800DE64EC /* ComparisonResult+Extensions.swift in Sources */,
@@ -191,6 +198,7 @@
 				6205DF221DAC24D200DE64EC /* CATPComparable.swift in Sources */,
 				6205DF131DAC187800DE64EC /* Pessoa.swift in Sources */,
 				6205DF041DAC186A00DE64EC /* AppDelegate.swift in Sources */,
+				336692121DB425EA0022104B /* Int+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

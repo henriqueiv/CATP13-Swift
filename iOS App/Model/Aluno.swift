@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum Nivel {
-    case indefinido, graduacao, especializacao, mestrado, doutorado
+enum Nivel: Int {
+    case graduacao, especializacao, mestrado, doutorado, indefinido
     
     var asString: String {
         switch self {

@@ -10,34 +10,35 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var alunos: [Aluno] = [] {
+    private var alunos: [Aluno] = [] {
         didSet {
             tableView.reloadData()
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        generateAlunos()
+    func insertAluno(aluno: Aluno) {
+        alunos.append(aluno)
+        alunos = alunos.mySort()
     }
     
-    private func generateAlunos() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        alunos = generateAlunos().mySort()
+    }
+    
+    private func generateAlunos() -> [Aluno] {
         var randomAlunos = [Aluno]()
         for i in 1...9 {
-            let a = Aluno(codigo: "0000000\(i)", nivel: .especializacao)
+            let a = Aluno(codigo: "0000000\(i)", nivel: Nivel(rawValue: Int.random(min: 0, max: 3))!)
+            a.setSexo(sexo: Sexo(rawValue: Int.random(min: 0, max: 1))!)
             a.setNome(nome: String.generateRandomString(withLength: 8).lowercased())
             randomAlunos.append(a)
         }
-        alunos = randomAlunos
+        return randomAlunos
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         (segue.destination.childViewControllers.first as? AddNewAlunoViewController)?.delegate = self
-    }
-    
-    @IBAction func didTapSort(_ sender: AnyObject) {
-        let sorted = alunos.mySort()
-        alunos = sorted
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,10 +51,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let customCell = cell as! AlunoTableViewCell
         let aluno = alunos[indexPath.row]
         
-        cell.textLabel?.text = aluno.getNome()
-        cell.detailTextLabel?.text = "\(aluno.getNivel())"
+        customCell.nomeLabel?.text = aluno.getNome()
+        customCell.nivelLabel?.text = "\(aluno.getNivel())"
+        customCell.codLabel?.text = "\(aluno.getCodigo())"
+        let d = DateFormatter()
+        d.dateStyle = .short
+        customCell.dataLabel?.text = d.string(from: aluno.getDtnascimento())
+        customCell.sexLabel?.text = "\(aluno.getSexo())"
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

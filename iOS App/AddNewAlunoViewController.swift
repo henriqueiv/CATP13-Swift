@@ -45,10 +45,8 @@ class AddNewAlunoViewController: UITableViewController {
             newAluno.setNivel(nivel: .indefinido)
         }
         
-        self.delegate?.alunos.append(newAluno)
-        dismiss(animated: true) {
-            self.delegate?.tableView.reloadData()
-        }
+        self.delegate?.insertAluno(aluno: newAluno)
+        dismiss(animated: true)
     }
     
 }

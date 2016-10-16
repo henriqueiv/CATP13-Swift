@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Sexo {
+enum Sexo: Int {
     case masculino, feminino, indefinido
     
     var asString: String {
